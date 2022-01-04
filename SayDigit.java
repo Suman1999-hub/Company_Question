@@ -1,3 +1,14 @@
+//Say Digit
+/*
+Input:
+    412
+Output:
+    Four One Two
+Input:
+    20
+Output:
+    Two Zero
+*/
 package Recursion;
 import java.util.*;
 public class SayDigit {
