@@ -1,0 +1,33 @@
+/*
+Input:
+    SumanRana
+Output:
+    Reverse String: anaRnamuS
+    aanmSnRau
+*/
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        String even="";
+        String odd="";
+        String rev="";
+        for(int i=str.length()-1;i>=0;i--){
+            rev=rev+str.charAt(i);
+        }
+        System.out.println("Reverse String: "+rev);
+        for(int i=0;i<rev.length();i++){
+            if(i%2==0){
+                even=even+rev.charAt(i);
+            }
+            else{
+                odd=odd+rev.charAt(i);
+            }
+        }
+        
+        System.out.println(even+odd); 
+    }
+}
